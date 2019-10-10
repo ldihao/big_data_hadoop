@@ -12,7 +12,8 @@ public class FileMap implements Serializable {
     public int lastServer;
 
     public Vector<MyFile> id_file;
-
+    
+    //blockName - serverIds
     public HashMap<String,List<Integer>> block_datanode;
     
     public HashMap<String, Integer> recover_datanode;
