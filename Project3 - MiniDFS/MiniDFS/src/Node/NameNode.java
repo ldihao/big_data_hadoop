@@ -132,9 +132,6 @@ public class NameNode extends Thread implements Serializable {
 						ArrayList<Integer> servers = new ArrayList<>();
 						servers.add(assign_server);
 						fileMap.block_datanode.put(blkName, servers);
-
-						// the first server would be the default recover server
-						fileMap.recover_datanode.put(blkName, assign_server);
 					}
 				}
 			}
@@ -206,49 +203,49 @@ public class NameNode extends Thread implements Serializable {
 	public void recoverFile() {
 		MyFile myFile = fileMap.id_file.get(Manager.file_ID);
 		String[] blockNames = myFile.getBlocks();
-
+		
 		boolean canRecover = true;
 
 		for (int i = 0; i < blockNames.length; ++i) {
 			List<Integer> servers = fileMap.block_datanode.get(blockNames[i]);
 			int firstServer = -1;
-			List<Integer> needRecover = new ArrayList<Integer>();
+			List<Integer> needRecover = Manager.needRecover;
+			needRecover.clear();
+			Manager.recover_datanode.clear();
 
 			for (int j = 0; j < servers.size(); ++j) {
 				int id = servers.get(j);
 				String filePath = "dfs/datanode" + id + "/" + blockNames[i];
 				boolean flag = hasFile(filePath);
 				if (flag) {
-					if(firstServer == -1)
+					if (firstServer == -1)
 						firstServer = id;
-				}
-				else {
+				} else {
 					needRecover.add(id);
 				}
 			}
-
-			if (firstServer != -1) {
-				fileMap.recover_datanode.replace(blockNames[i], firstServer);
-
+			if (needRecover.isEmpty())
+				continue;
+			else if (firstServer != -1) {
+				Manager.recover_datanode.put(blockNames[i], firstServer);
 				// recover the node
-				for (int j = 0; j < needRecover.size(); ++j) {
+				for (int j = 0; j < Manager.SERVER_NUMBER; ++j) {
 					try {
-						Manager.data_event[needRecover.get(j)].await();
+						Manager.data_event[j].await();
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					} catch (BrokenBarrierException e) {
 						e.printStackTrace();
 					}
 				}
-				
-				for (int m = 0; m < 4; m++) {
-					try {
-						Manager.data_event[m].await();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					} catch (BrokenBarrierException e) {
-						e.printStackTrace();
-					}
+				try {
+					Manager.finishrecover_event.await();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (BrokenBarrierException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 			} else {
 				canRecover = false;
@@ -258,17 +255,19 @@ public class NameNode extends Thread implements Serializable {
 		}
 		if (!canRecover) {
 			System.out.println("Sorry, file cannot be recovered.");
-			for (int j = 0; j < Manager.SERVER_NUMBER; j++)
-				try {
-					Manager.main_event[j].await();
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (BrokenBarrierException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-		}
+		} else
+			System.out.println("Recover success!");
+
+		for (int j = 0; j < Manager.SERVER_NUMBER; j++)
+			try {
+				Manager.main_event[j].await();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (BrokenBarrierException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 
 }

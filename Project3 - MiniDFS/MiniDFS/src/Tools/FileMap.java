@@ -15,15 +15,12 @@ public class FileMap implements Serializable {
     
     //blockName - serverIds
     public HashMap<String,List<Integer>> block_datanode;
-    
-    public HashMap<String, Integer> recover_datanode;
 
     public FileMap(){
         lastId = 0;
         lastServer = 0;
         id_file = new Vector<>();
         block_datanode = new HashMap<>();
-        recover_datanode = new HashMap<>();
     }
 
 

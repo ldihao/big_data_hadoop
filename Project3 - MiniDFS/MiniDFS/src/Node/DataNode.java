@@ -26,33 +26,44 @@ public class DataNode extends Thread {
 			} catch (BrokenBarrierException e) {
 				e.printStackTrace();
 			}
-			if (Manager.cmd_type == Operation.put && Manager.blockServer.containsKey(id)) {
-				save();
-			} else if (Manager.cmd_type == Operation.read)
-				read();
-			else if (Manager.cmd_type == Operation.recover && Manager.blockServer.containsKey(id))
-				recover();
-			else {
+			if (Manager.cmd_type == Operation.recover) {
+				if (Manager.needRecover.contains(id))
+					recover();
+
 				try {
-					Manager.main_event[id].await();
+					Manager.finishrecover_event.await();
 				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (BrokenBarrierException e) {
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+			} else {
+				if (Manager.cmd_type == Operation.put && Manager.blockServer.containsKey(id)) {
+					save();
+				} else if (Manager.cmd_type == Operation.read)
+					read();
+				else {
+					try {
+						Manager.main_event[id].await();
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					} catch (BrokenBarrierException e) {
+						e.printStackTrace();
+					}
+				}
 			}
-
 		}
 	}
 
 	public void save() {
-		//System.out.println("Size of server " + id + ": " + Manager.blockServer.get(id).size());
 		for (Block block : Manager.blockServer.get(id)) {
 			FileHelper.write("dfs/datanode" + id + "/" + block.getName(), block.getOffset());
 		}
-		
+
 		Manager.blockServer.clear();
-		
+
 		try {
 			Manager.main_event[id].await();
 		} catch (InterruptedException e) {
@@ -77,16 +88,12 @@ public class DataNode extends Thread {
 	}
 
 	public void recover() {
-		// todo
-		String path = "dfs/datanode" + id + "/";
-		String filename = Manager.file_ID + "-part-0";
-		FileHelper.recover();
-		try {
-			Manager.read_event.await();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (BrokenBarrierException e) {
-			e.printStackTrace();
+		for(String blockName : Manager.recover_datanode.keySet()) {		
+			String srcPath = "dfs/datanode" + Manager.recover_datanode.get(blockName) + "/";
+			for(int serverId:Manager.needRecover) {
+				String desPath = "dfs/datanode" + serverId +   "/";
+				FileHelper.recover(srcPath, desPath, blockName);
+			}
 		}
 	}
 

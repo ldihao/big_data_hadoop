@@ -67,7 +67,7 @@ public class Main {
 				} else if (Manager.cmd_type == Operation.recover) {
 					for (int i = 0; i < Manager.SERVER_NUMBER; i++)
 						Manager.main_event[i].await();
-					System.out.println("Recover success!");
+					
 				} else
 					continue;
 			}

@@ -38,8 +38,22 @@ public class FileHelper {
         }
     }
     
-    public static void recover() {
-    	//todo
+    public static void recover(String srcPath, String desPath, String fileName) {
+    	File src_file = new File(srcPath + fileName);
+        File des_file = new File(desPath+fileName);
+        int size;
+        
+        byte[] b = new byte[Manager.BLOCK_SIZE];
+        try ( FileInputStream fis = new FileInputStream(src_file);
+              FileOutputStream fos = new FileOutputStream(des_file);){
+
+            if((size=fis.read(b))!=-1)
+                fos.write(b,0,size);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     	
     }
 
