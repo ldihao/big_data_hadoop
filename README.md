@@ -14,4 +14,8 @@ http://cs.sjtu.edu.cn/~wuct/bdpt/index.html
 
 ## Project 3
 
-https://github.com/fangpin/miniDFS
+c++: https://github.com/fangpin/miniDFS
+
+python: https://github.com/HawkAaron/MiniDFS
+
+java: https://github.com/lyick/miniDFS/tree/master/mini-DFS
