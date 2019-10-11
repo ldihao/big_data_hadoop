@@ -42,6 +42,11 @@ public class FileHelper {
 		File src_file = new File(srcPath + fileName);
 		File des_file = new File(desPath + fileName);
 		int size;
+		
+		File dataDir;
+		dataDir = new File(desPath);
+		if (!dataDir.exists())
+			dataDir.mkdir();
 
 		byte[] b = new byte[Manager.BLOCK_SIZE];
 		try (FileInputStream fis = new FileInputStream(src_file);
