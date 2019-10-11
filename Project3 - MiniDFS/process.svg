@@ -1,0 +1,990 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [ <!ENTITY quot "&#34;">  <!ENTITY amp "&#38;">  <!ENTITY apos "&#39;">  <!ENTITY lt "&#60;">  <!ENTITY gt "&#62;">  <!ENTITY nbsp "&#160;">  <!ENTITY iexcl "&#161;">  <!ENTITY cent "&#162;">  <!ENTITY pound "&#163;">  <!ENTITY curren "&#164;">  <!ENTITY yen "&#165;">  <!ENTITY brvbar "&#166;">  <!ENTITY sect "&#167;">  <!ENTITY uml "&#168;">  <!ENTITY copy "&#169;">  <!ENTITY ordf "&#170;">  <!ENTITY laquo "&#171;">  <!ENTITY not "&#172;">  <!ENTITY shy "&#173;">  <!ENTITY reg "&#174;">  <!ENTITY macr "&#175;">  <!ENTITY deg "&#176;">  <!ENTITY plusmn "&#177;">  <!ENTITY sup2 "&#178;">  <!ENTITY sup3 "&#179;">  <!ENTITY acute "&#180;">  <!ENTITY micro "&#181;">  <!ENTITY para "&#182;">  <!ENTITY middot "&#183;">  <!ENTITY cedil "&#184;">  <!ENTITY sup1 "&#185;">  <!ENTITY ordm "&#186;">  <!ENTITY raquo "&#187;">  <!ENTITY frac14 "&#188;">  <!ENTITY frac12 "&#189;">  <!ENTITY frac34 "&#190;">  <!ENTITY iquest "&#191;">  <!ENTITY Agrave "&#192;">  <!ENTITY Aacute "&#193;">  <!ENTITY Acirc "&#194;">  <!ENTITY Atilde "&#195;">  <!ENTITY Auml "&#196;">  <!ENTITY Aring "&#197;">  <!ENTITY AElig "&#198;">  <!ENTITY Ccedil "&#199;">  <!ENTITY Egrave "&#200;">  <!ENTITY Eacute "&#201;">  <!ENTITY Ecirc "&#202;">  <!ENTITY Euml "&#203;">  <!ENTITY Igrave "&#204;">  <!ENTITY Iacute "&#205;">  <!ENTITY Icirc "&#206;">  <!ENTITY Iuml "&#207;">  <!ENTITY ETH "&#208;">  <!ENTITY Ntilde "&#209;">  <!ENTITY Ograve "&#210;">  <!ENTITY Oacute "&#211;">  <!ENTITY Ocirc "&#212;">  <!ENTITY Otilde "&#213;">  <!ENTITY Ouml "&#214;">  <!ENTITY times "&#215;">  <!ENTITY Oslash "&#216;">  <!ENTITY Ugrave "&#217;">  <!ENTITY Uacute "&#218;">  <!ENTITY Ucirc "&#219;">  <!ENTITY Uuml "&#220;">  <!ENTITY Yacute "&#221;">  <!ENTITY THORN "&#222;">  <!ENTITY szlig "&#223;">  <!ENTITY agrave "&#224;">  <!ENTITY aacute "&#225;">  <!ENTITY acirc "&#226;">  <!ENTITY atilde "&#227;">  <!ENTITY auml "&#228;">  <!ENTITY aring "&#229;">  <!ENTITY aelig "&#230;">  <!ENTITY ccedil "&#231;">  <!ENTITY egrave "&#232;">  <!ENTITY eacute "&#233;">  <!ENTITY ecirc "&#234;">  <!ENTITY euml "&#235;">  <!ENTITY igrave "&#236;">  <!ENTITY iacute "&#237;">  <!ENTITY icirc "&#238;">  <!ENTITY iuml "&#239;">  <!ENTITY eth "&#240;">  <!ENTITY ntilde "&#241;">  <!ENTITY ograve "&#242;">  <!ENTITY oacute "&#243;">  <!ENTITY ocirc "&#244;">  <!ENTITY otilde "&#245;">  <!ENTITY ouml "&#246;">  <!ENTITY divide "&#247;">  <!ENTITY oslash "&#248;">  <!ENTITY ugrave "&#249;">  <!ENTITY uacute "&#250;">  <!ENTITY ucirc "&#251;">  <!ENTITY uuml "&#252;">  <!ENTITY yacute "&#253;">  <!ENTITY thorn "&#254;">  <!ENTITY yuml "&#255;">  <!ENTITY OElig "&#338;">  <!ENTITY oelig "&#339;">  <!ENTITY Scaron "&#352;">  <!ENTITY scaron "&#353;">  <!ENTITY Yuml "&#376;">  <!ENTITY fnof "&#402;">  <!ENTITY circ "&#710;">  <!ENTITY tilde "&#732;">  <!ENTITY Alpha "&#913;">  <!ENTITY Beta "&#914;">  <!ENTITY Gamma "&#915;">  <!ENTITY Delta "&#916;">  <!ENTITY Epsilon "&#917;">  <!ENTITY Zeta "&#918;">  <!ENTITY Eta "&#919;">  <!ENTITY Theta "&#920;">  <!ENTITY Iota "&#921;">  <!ENTITY Kappa "&#922;">  <!ENTITY Lambda "&#923;">  <!ENTITY Mu "&#924;">  <!ENTITY Nu "&#925;">  <!ENTITY Xi "&#926;">  <!ENTITY Omicron "&#927;">  <!ENTITY Pi "&#928;">  <!ENTITY Rho "&#929;">  <!ENTITY Sigma "&#931;">  <!ENTITY Tau "&#932;">  <!ENTITY Upsilon "&#933;">  <!ENTITY Phi "&#934;">  <!ENTITY Chi "&#935;">  <!ENTITY Psi "&#936;">  <!ENTITY Omega "&#937;">  <!ENTITY alpha "&#945;">  <!ENTITY beta "&#946;">  <!ENTITY gamma "&#947;">  <!ENTITY delta "&#948;">  <!ENTITY epsilon "&#949;">  <!ENTITY zeta "&#950;">  <!ENTITY eta "&#951;">  <!ENTITY theta "&#952;">  <!ENTITY iota "&#953;">  <!ENTITY kappa "&#954;">  <!ENTITY lambda "&#955;">  <!ENTITY mu "&#956;">  <!ENTITY nu "&#957;">  <!ENTITY xi "&#958;">  <!ENTITY omicron "&#959;">  <!ENTITY pi "&#960;">  <!ENTITY rho "&#961;">  <!ENTITY sigmaf "&#962;">  <!ENTITY sigma "&#963;">  <!ENTITY tau "&#964;">  <!ENTITY upsilon "&#965;">  <!ENTITY phi "&#966;">  <!ENTITY chi "&#967;">  <!ENTITY psi "&#968;">  <!ENTITY omega "&#969;">  <!ENTITY thetasym "&#977;">  <!ENTITY upsih "&#978;">  <!ENTITY piv "&#982;">  <!ENTITY ensp "&#8194;">  <!ENTITY emsp "&#8195;">  <!ENTITY thinsp "&#8201;">  <!ENTITY zwnj "&#8204;">  <!ENTITY zwj "&#8205;">  <!ENTITY lrm "&#8206;">  <!ENTITY rlm "&#8207;">  <!ENTITY ndash "&#8211;">  <!ENTITY mdash "&#8212;">  <!ENTITY lsquo "&#8216;">  <!ENTITY rsquo "&#8217;">  <!ENTITY sbquo "&#8218;">  <!ENTITY ldquo "&#8220;">  <!ENTITY rdquo "&#8221;">  <!ENTITY bdquo "&#8222;">  <!ENTITY dagger "&#8224;">  <!ENTITY Dagger "&#8225;">  <!ENTITY bull "&#8226;">  <!ENTITY hellip "&#8230;">  <!ENTITY permil "&#8240;">  <!ENTITY prime "&#8242;">  <!ENTITY Prime "&#8243;">  <!ENTITY lsaquo "&#8249;">  <!ENTITY rsaquo "&#8250;">  <!ENTITY oline "&#8254;">  <!ENTITY frasl "&#8260;">  <!ENTITY euro "&#8364;">  <!ENTITY image "&#8465;">  <!ENTITY weierp "&#8472;">  <!ENTITY real "&#8476;">  <!ENTITY trade "&#8482;">  <!ENTITY alefsym "&#8501;">  <!ENTITY larr "&#8592;">  <!ENTITY uarr "&#8593;">  <!ENTITY rarr "&#8594;">  <!ENTITY darr "&#8595;">  <!ENTITY harr "&#8596;">  <!ENTITY crarr "&#8629;">  <!ENTITY lArr "&#8656;">  <!ENTITY uArr "&#8657;">  <!ENTITY rArr "&#8658;">  <!ENTITY dArr "&#8659;">  <!ENTITY hArr "&#8660;">  <!ENTITY forall "&#8704;">  <!ENTITY part "&#8706;">  <!ENTITY exist "&#8707;">  <!ENTITY empty "&#8709;">  <!ENTITY nabla "&#8711;">  <!ENTITY isin "&#8712;">  <!ENTITY notin "&#8713;">  <!ENTITY ni "&#8715;">  <!ENTITY prod "&#8719;">  <!ENTITY sum "&#8721;">  <!ENTITY minus "&#8722;">  <!ENTITY lowast "&#8727;">  <!ENTITY radic "&#8730;">  <!ENTITY prop "&#8733;">  <!ENTITY infin "&#8734;">  <!ENTITY ang "&#8736;">  <!ENTITY and "&#8743;">  <!ENTITY or "&#8744;">  <!ENTITY cap "&#8745;">  <!ENTITY cup "&#8746;">  <!ENTITY int "&#8747;">  <!ENTITY there4 "&#8756;">  <!ENTITY sim "&#8764;">  <!ENTITY cong "&#8773;">  <!ENTITY asymp "&#8776;">  <!ENTITY ne "&#8800;">  <!ENTITY equiv "&#8801;">  <!ENTITY le "&#8804;">  <!ENTITY ge "&#8805;">  <!ENTITY sub "&#8834;">  <!ENTITY sup "&#8835;">  <!ENTITY nsub "&#8836;">  <!ENTITY sube "&#8838;">  <!ENTITY supe "&#8839;">  <!ENTITY oplus "&#8853;">  <!ENTITY otimes "&#8855;">  <!ENTITY perp "&#8869;">  <!ENTITY sdot "&#8901;">  <!ENTITY lceil "&#8968;">  <!ENTITY rceil "&#8969;">  <!ENTITY lfloor "&#8970;">  <!ENTITY rfloor "&#8971;">  <!ENTITY lang "&#9001;">  <!ENTITY rang "&#9002;">  <!ENTITY loz "&#9674;">  <!ENTITY spades "&#9824;">  <!ENTITY clubs "&#9827;">  <!ENTITY hearts "&#9829;">  <!ENTITY diams "&#9830;"> ]><svg data-v-1490995e="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svgroot-10000" tabindex="1" name="tkcanvas" width="1363" height="860" transform="matrix(1,0,0,1,0,0)" viewBox="0,0,1363,860" style="outline: none; transform-origin: 0px 0px; background: rgb(255, 255, 255);"><g xmlns="http://www.w3.org/2000/svg" transform="translate(-331 -99)"><g transform="matrix(1,0,0,1,-559,-315)" id="1570759289437:990" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759289438:991" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="940" y="686" width="304.921875" height="40" xid="1570759289438:991"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="381" data-offset-y="371" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>Manager</u></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759289438:992" transform="matrix(1,0,0,1,567,263)" name="foreignObject" style="opacity: 1;"><foreignObject x="373" y="461" width="304.921875" height="148" xid="1570759289438:992"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="381" data-offset-y="409" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>events:CyclicBarrier</p><p>filePath:String</p><p>fileId:int</p><p>cmdType:Operation</p><p>blockServer:HashMap&lt;Integer, Array&lt;Block&gt;&gt;</p><p>recover_datanode:HashMap&lt;String, Integer&gt;</p><p><span style="color: rgb(36, 41, 46);">needRecover:</span>List&lt;Integer&gt;</p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759289438:993" transform="matrix(1,0,0,1,567,409)" name="foreignObject" style="opacity: 1;"><foreignObject x="373" y="461" width="304.921875" height="40" xid="1570759289438:993"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="381" data-offset-y="555" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>+init():void</p></div></div></body></foreignObject></g></g><g transform="matrix(1,0,0,1,485,-220)" id="1570759805287:2234" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759805287:2235" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="40" xid="1570759805287:2235"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="834" data-offset-y="149" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>Main</u></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759805287:2236" transform="matrix(1,0,0,1,0,38)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="58" xid="1570759805287:2236"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="834" data-offset-y="187" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>nameNode:NameNode</p><p>dataNode:DataNode[]</p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570759805287:2237" transform="matrix(1,0,0,1,0,94)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="58" xid="1570759805287:2237"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="834" data-offset-y="243" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>+start():void</p><p>+process_cmd(String):bool</p></div></div></body></foreignObject></g></g><g transform="matrix(2,0,0,2,510,154)" id="1570759846106:2520" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><circle data-v-650e87a4="" id="1570759846106:2521" cx="14" cy="5.83333333" r="5.83333333" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></circle><path data-v-ed905fe4="" id="1570759846106:2522" d="M14,12 L14,28" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></path><path data-v-ed905fe4="" id="1570759846106:2523" d="M0,17 L28,17" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></path><path data-v-ed905fe4="" id="1570759846106:2524" d="M14,28 L0,40" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></path><path data-v-ed905fe4="" id="1570759846106:2525" d="M14,28 L28,40" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></path></g><g transform="matrix(1,0,0,1,378,202)" id="1570759864425:2617" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><rect data-v-28a7f6c0="" id="1570759864425:2618" x="110" y="40" width="99" height="35" rx="0" ry="0" transform="matrix(1,0,0,1,0,0)" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></rect><g data-v-d2b07fe8="" data-v-51559dc8="" id="1570759864425:2619" transform="matrix(1,0,0,1,136,46)" name="foreignObject" style="opacity: 1;"><foreignObject x="0" y="0" width="47" height="23" xid="1570759864425:2619"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="514" data-offset-y="248" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 5px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center">Client</p></div></div></body></foreignObject></g></g><g data-v-1ecf2d08="" id="1570759900958:3912" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-0bc663d3="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><line data-v-0bc663d3="" id="1570759900958:3907" tabindex="1" x1="566.000000000001" y1="195.46318289786277" x2="834" y2="209.4679334916853" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></line> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570759912117:3916" transform="matrix(1,0,0,1,-19,-14)" name="foreignObject" style="opacity: 1;"><foreignObject x="702" y="187" width="69" height="23" xid="1570759912117:3916"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="683" data-offset-y="173" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>scan_cmd</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(0.052185328,-0.998637417,0.998637417,0.052185328,568.10164549,193.107095822)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570759900958:3909" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(-0.052185328,0.998637417,-0.998637417,-0.052185328,834.26092664,204.006812915)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570759900958:3911" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g transform="matrix(1,0,0,1,663,103)" id="1570760152801:4317" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760152801:4318" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="338" y="369" width="261" height="40" xid="1570760152801:4318"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1001" data-offset-y="472" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>NameNode</u><span class="ql-cursor">﻿</span></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760152801:4319" transform="matrix(1,0,0,1,0,38)" name="foreignObject" style="opacity: 1;"><foreignObject x="338" y="369" width="261" height="40" xid="1570760152801:4319"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1001" data-offset-y="510" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>fileMap:FileMap</p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760152801:4320" transform="matrix(1,0,0,1,0,76)" name="foreignObject" style="opacity: 1;"><foreignObject x="338" y="369" width="261" height="130" xid="1570760152801:4320"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1001" data-offset-y="548" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>+readFile():void</p><p>+splitFile():void</p><p>+recoverFile():void</p><p>+fetchFile():void</p><p>+load():void</p><p>+update():void</p></div></div></body></foreignObject></g></g><g transform="matrix(1,0,0,1,1045,138)" id="1570760211642:4377" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760211642:4378" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="40" xid="1570760211642:4378"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="507" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>DataNode</u></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760211642:4379" transform="matrix(1,0,0,1,0,38)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="40" xid="1570760211642:4379"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="545" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>id:int</p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760211642:4380" transform="matrix(1,0,0,1,0,76)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="76" xid="1570760211642:4380"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="583" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>+read():void</p><p>+write():void</p><p>+recover():void</p></div></div></body></foreignObject></g></g><g data-v-1ecf2d08="" id="1570760287424:5426" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570760287423:5421" points="959,300 959,320 1131.5,320 1131.5,473" emitSelect="true" style="stroke: rgb(191, 64, 157); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----><!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570760297764:5548" transform="matrix(1,0,0,1,-81,26)" name="foreignObject" style="opacity: 1;"><foreignObject x="1114" y="305" width="83" height="23" xid="1570760297764:5548"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="1033" data-offset-y="331"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>name_event</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(1,0,0,1,961,302)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760287423:5423" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(-1,0,0,-1,1137,473)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760287424:5425" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(191, 64, 157); stroke-width: 2; stroke-dasharray: none; fill: rgb(191, 64, 157); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g data-v-1ecf2d08="" id="1570760309434:5622" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570760309433:5617" points="1261,575 1395,575" emitSelect="true" style="stroke: rgb(159, 64, 191); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570760322429:5842" transform="matrix(1,0,0,1,-32,-13)" name="foreignObject" style="opacity: 1;"><foreignObject x="1330" y="560" width="75" height="23" xid="1570760322429:5842"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="1298" data-offset-y="547"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>data_event</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(0,-1,1,0,1263,573)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760309434:5619" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(0,1,-1,0,1395,570)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760309434:5621" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(159, 64, 191); stroke-width: 2; stroke-dasharray: none; fill: rgb(159, 64, 191); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g data-v-1ecf2d08="" id="1570760409692:5865" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570760409691:5860" points="959,300 959,483 684.921875,483" emitSelect="true" style="stroke: rgb(100, 64, 191); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570760452360:11996" transform="matrix(1,0,0,1,-66,-22)" name="foreignObject" style="opacity: 1;"><foreignObject x="915" y="468" width="63" height="23" xid="1570760452360:11996"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="849" data-offset-y="446"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>cmdType</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(1,0,0,1,961,302)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760409692:5862" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(0,-1,1,0,685,488)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760409692:5864" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(100, 64, 191); stroke-width: 2; stroke-dasharray: none; fill: rgb(100, 64, 191); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g data-v-1ecf2d08="" id="1570760492064:12006" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570760492063:12001" points="1519,508 1519,216 1083,216" emitSelect="true" style="stroke: rgb(174, 191, 64); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570760497931:12014" transform="matrix(1,0,0,1,-15,-9)" name="foreignObject" style="opacity: 1;"><foreignObject x="1449" y="201" width="77" height="23" xid="1570760497931:12014"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="1434" data-offset-y="192"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>main_event</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(-1,0,0,-1,1517,506)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760492063:12003" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(0,-1,1,0,1083,221)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570760492064:12005" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(174, 191, 64); stroke-width: 2; stroke-dasharray: none; fill: rgb(174, 191, 64); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g transform="matrix(1,0,0,1,618,388)" id="1570760851208:15381" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760851208:15382" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="343" y="369" width="342" height="40" xid="1570760851208:15382"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="961" data-offset-y="757" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>FileMap</u></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760851208:15383" transform="matrix(1,0,0,1,0,38)" name="foreignObject" style="opacity: 1;"><foreignObject x="343" y="369" width="342" height="76" xid="1570760851208:15383"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="961" data-offset-y="795" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>id_file:Vector&lt;MyFile&gt;</p><p>block_datanode:HashMap&lt;String,List&lt;Integer&gt;&gt;</p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570760851208:15384" transform="matrix(1,0,0,1,1080,1058)" name="foreignObject" style="opacity: 1;"><foreignObject x="-736.9998779296875" y="-576.7332077026367" width="342" height="40" xid="1570760851208:15384"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="961.0001220703125" data-offset-y="869.2667922973633" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: 100%; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"></p></div></div></body></foreignObject></g></g><g transform="matrix(1,0,0,1,1045,353)" id="1570761007543:15789" name="tkGroup" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: bounding-box; stroke-linejoin: round; stroke-linecap: round;"><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570761007543:15790" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="40" xid="1570761007543:15790"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="722" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"><em><u>FileHelper</u></em></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570761007543:15791" transform="matrix(1,0,0,1,0,38)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="40" xid="1570761007543:15791"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="760" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: 100%; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p class="ql-align-center"></p></div></div></body></foreignObject></g><g data-v-d2b07fe8="" data-v-6c9c0feb="" id="1570761007543:15792" transform="matrix(1,0,0,1,0,76)" name="foreignObject" style="opacity: 1;"><foreignObject x="349" y="369" width="250" height="76" xid="1570761007543:15792"><body xmlns="http://www.w3.org/1999/xhtml" data-offset-x="1394" data-offset-y="798" style="margin: 0px; padding: 0px; height: 100%;"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgb(0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgb(255, 255, 255); opacity: 1; width: 100%; min-width: 40px; height: auto; padding: 9px 15px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>+read():void</p><p>+write():void</p><p>+recover():void</p></div></div></body></foreignObject></g></g><g data-v-1ecf2d08="" id="1570761202500:16541" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570761202499:16536" points="1519,658 1519,723" emitSelect="true" style="stroke: rgb(191, 121, 64); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570761210242:16548" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="1521" y="676" width="45" height="23" xid="1570761210242:16548"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="1521" data-offset-y="676"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>action</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(1,0,0,1,1521,660)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570761202500:16538" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(-1,0,0,-1,1524,723)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570761202500:16540" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(191, 121, 64); stroke-width: 2; stroke-dasharray: none; fill: rgb(191, 121, 64); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><g data-v-1ecf2d08="" id="1570761241649:16912" transform="matrix(1,0,0,1,0,0)" name="tkconnector" style="stroke: rgb(0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgb(255, 255, 255); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"><g data-v-923cb948="" data-v-1ecf2d08="" name="connectorLine"><g data-v-9cfc0d1a="" data-v-923cb948="" transform="matrix(1,0,0,1,0,0)"><polyline data-v-9cfc0d1a="" id="1570761241649:16907" points="1131.5,677 1131.5,697 1132,697 1132,758" emitSelect="true" style="stroke: rgb(191, 162, 64); stroke-width: 2; stroke-dasharray: none; fill: none; opacity: 1; shape-rendering: crispedges; visibility: visible; cursor: inherit; pointer-events: stroke; stroke-linejoin: round; stroke-linecap: round;"></polyline> <!----><!----><!----><!----> <!----> <!----></g></g> <g data-v-d2b07fe8="" data-v-51559dc8="" data-v-1ecf2d08="" id="1570761246622:17015" transform="matrix(1,0,0,1,0,0)" name="foreignObject" style="opacity: 1;"><foreignObject x="1134" y="702" width="51" height="23" xid="1570761246622:17015"><body xmlns="http://www.w3.org/1999/xhtml" style="margin: 0px; padding: 0px; height: 100%;" data-offset-x="1134" data-offset-y="702"><div data-v-d2b07fe8="" class="editor ql-container ql-bubble ql-disabled" style="border-color: rgba(0, 0, 0, 0); border-radius: 0px; border-width: 2px; border-style: solid; background-color: rgba(0, 0, 0, 0); opacity: 1; width: -webkit-max-content; min-width: 10px; height: auto; padding: 0px 3px; visibility: visible; cursor: inherit; color: rgb(0, 0, 0);"><div data-v-d2b07fe8="" class="ql-editor ql-blank"><p>update</p></div></div></body></foreignObject></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(1,0,0,1,1134,679)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570761241649:16909" d="M-6,-2
+                A4,4 0,1,1 2,-2
+                A4,4 0,1,1 -6,-2" name="tkmarker" style="stroke: rgba(0, 0, 0, 0); stroke-width: 2; stroke-dasharray: none; fill: rgba(0, 0, 0, 0); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g> <g data-v-1ccbb2a8="" data-v-1ecf2d08="" transform="matrix(-1,0,0,-1,1137,758)" name="tkMarker"><path data-v-1ccbb2a8="" id="1570761241649:16911" d="M5,0L0,10L10,10z" name="tkmarker" style="stroke: rgb(191, 162, 64); stroke-width: 2; stroke-dasharray: none; fill: rgb(191, 162, 64); opacity: 1; shape-rendering: geometricprecision; visibility: visible; cursor: inherit; pointer-events: all; stroke-linejoin: round; stroke-linecap: round;"></path></g></g><rect data-v-f4ea02d8="" x="0" y="0" width="0" height="0" id="selectbox"></rect><!----><!----><g data-v-1f878eb6="" name="tkhover"></g><g name="moreBtnx"></g><!----></g><style>/* <![CDATA[ */ /*!
+ * Quill Editor v1.3.4
+ * https://quilljs.com/
+ * Copyright (c) 2014, Jason Chen
+ * Copyright (c) 2013, salesforce.com
+ */
+.ql-container {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    height: 100%;
+    margin: 0px;
+
+    /*position: relative;*/
+    /*
+    * 改为static定位，才能在electron中正确拖动。
+    * changed by jinbo。
+    */
+    position: static;
+
+}
+.ql-container.ql-disabled .ql-tooltip {
+    visibility: hidden;
+}
+.ql-container.ql-disabled .ql-editor ul[data-checked] > li::before {
+    pointer-events: none;
+}
+.ql-clipboard {
+    left: -100000px;
+    height: 1px;
+    overflow-y: hidden;
+    position: absolute;
+    top: 50%;
+}
+.ql-clipboard p {
+    margin: 0;
+    padding: 0;
+}
+.ql-editor {
+    box-sizing: border-box;
+    line-height: 1.42;
+    height: 100%;
+    outline: none;
+    overflow-y: auto;
+    /*padding: 12px 15px;*/
+    tab-size: 2;/*changed by jinbo*/
+    -moz-tab-size: 2;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    overflow: visible;/*added by jinbo*/
+}
+.ql-editor > * {
+    cursor: text;
+}
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+    margin: 0;
+    padding: 0;
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    cursor: default;
+}
+.ql-editor ol,
+.ql-editor ul {
+    padding-left: 1.5em;
+}
+.ql-editor ol > li,
+.ql-editor ul > li {
+    list-style-type: none;
+}
+.ql-editor ul > li::before {
+    content: '\2022';
+}
+.ql-editor ul[data-checked=true],
+.ql-editor ul[data-checked=false] {
+    pointer-events: none;
+}
+.ql-editor ul[data-checked=true] > li *,
+.ql-editor ul[data-checked=false] > li * {
+    pointer-events: all;
+}
+.ql-editor ul[data-checked=true] > li::before,
+.ql-editor ul[data-checked=false] > li::before {
+    color: #777;
+    cursor: pointer;
+    pointer-events: all;
+    transform: scale(1.8) translateX(-2px);/*added by jinbo*/
+
+}
+.ql-editor ul[data-checked=true] > li::before {
+    content: '\2611';
+}
+.ql-editor ul[data-checked=false] > li::before {
+    content: '\2610';
+}
+.ql-editor li::before {
+    display: inline-block;
+    white-space: nowrap;
+    width: 1.2em;
+}
+.ql-editor li:not(.ql-direction-rtl)::before {
+    margin-left: -1.5em;
+    margin-right: 0.3em;
+    text-align: right;
+}
+.ql-editor li.ql-direction-rtl::before {
+    margin-left: 0.3em;
+    margin-right: -1.5em;
+}
+.ql-editor ol li:not(.ql-direction-rtl),
+.ql-editor ul li:not(.ql-direction-rtl) {
+    /*padding-left: 1.5em;*/
+    padding-left: 0.8em;/*changed by jinbo*/
+}
+.ql-editor ol li.ql-direction-rtl,
+.ql-editor ul li.ql-direction-rtl {
+    padding-right: 1.5em;
+}
+.ql-editor ol li {
+    counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    counter-increment: list-0;
+}
+.ql-editor ol li:before {
+    content: counter(list-0, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-1 {
+    counter-increment: list-1;
+}
+.ql-editor ol li.ql-indent-1:before {
+    content: counter(list-1, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-1 {
+    counter-reset: list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-2 {
+    counter-increment: list-2;
+}
+.ql-editor ol li.ql-indent-2:before {
+    content: counter(list-2, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-2 {
+    counter-reset: list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-3 {
+    counter-increment: list-3;
+}
+.ql-editor ol li.ql-indent-3:before {
+    content: counter(list-3, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-3 {
+    counter-reset: list-4 list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-4 {
+    counter-increment: list-4;
+}
+.ql-editor ol li.ql-indent-4:before {
+    content: counter(list-4, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-4 {
+    counter-reset: list-5 list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-5 {
+    counter-increment: list-5;
+}
+.ql-editor ol li.ql-indent-5:before {
+    content: counter(list-5, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-5 {
+    counter-reset: list-6 list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-6 {
+    counter-increment: list-6;
+}
+.ql-editor ol li.ql-indent-6:before {
+    content: counter(list-6, decimal) '. ';
+}
+.ql-editor ol li.ql-indent-6 {
+    counter-reset: list-7 list-8 list-9;
+}
+.ql-editor ol li.ql-indent-7 {
+    counter-increment: list-7;
+}
+.ql-editor ol li.ql-indent-7:before {
+    content: counter(list-7, lower-alpha) '. ';
+}
+.ql-editor ol li.ql-indent-7 {
+    counter-reset: list-8 list-9;
+}
+.ql-editor ol li.ql-indent-8 {
+    counter-increment: list-8;
+}
+.ql-editor ol li.ql-indent-8:before {
+    content: counter(list-8, lower-roman) '. ';
+}
+.ql-editor ol li.ql-indent-8 {
+    counter-reset: list-9;
+}
+.ql-editor ol li.ql-indent-9 {
+    counter-increment: list-9;
+}
+.ql-editor ol li.ql-indent-9:before {
+    content: counter(list-9, decimal) '. ';
+}
+.ql-editor .ql-indent-1:not(.ql-direction-rtl) {
+    /*padding-left: 3em;*/
+    padding-left: 2em;/*changed by jinbo*/
+}
+.ql-editor li.ql-indent-1:not(.ql-direction-rtl) {
+    /*padding-left: 4.5em;*/
+    padding-left: 3em;/*changed by jinbo*/
+}
+.ql-editor .ql-indent-1.ql-direction-rtl.ql-align-right {
+    padding-right: 3em;
+}
+.ql-editor li.ql-indent-1.ql-direction-rtl.ql-align-right {
+    padding-right: 4.5em;
+}
+.ql-editor .ql-indent-2:not(.ql-direction-rtl) {
+    /*padding-left: 6em;*/
+    padding-left: 4em;
+}
+.ql-editor li.ql-indent-2:not(.ql-direction-rtl) {
+    /*padding-left: 7.5em;*/
+    padding-left: 4.5em;
+}
+.ql-editor .ql-indent-2.ql-direction-rtl.ql-align-right {
+    padding-right: 6em;
+}
+.ql-editor li.ql-indent-2.ql-direction-rtl.ql-align-right {
+    padding-right: 7.5em;
+}
+.ql-editor .ql-indent-3:not(.ql-direction-rtl) {
+    /*padding-left: 9em;*/
+    padding-left: 6em;
+}
+.ql-editor li.ql-indent-3:not(.ql-direction-rtl) {
+    /*padding-left: 10.5em;*/
+    padding-left: 6em;
+}
+.ql-editor .ql-indent-3.ql-direction-rtl.ql-align-right {
+    padding-right: 9em;
+}
+.ql-editor li.ql-indent-3.ql-direction-rtl.ql-align-right {
+    padding-right: 10.5em;
+}
+.ql-editor .ql-indent-4:not(.ql-direction-rtl) {
+    /*padding-left: 12em;*/
+    padding-left: 8em;
+}
+.ql-editor li.ql-indent-4:not(.ql-direction-rtl) {
+    padding-left: 13.5em;
+}
+.ql-editor .ql-indent-4.ql-direction-rtl.ql-align-right {
+    /*padding-right: 12em;*/
+    padding-right:8em;
+}
+.ql-editor li.ql-indent-4.ql-direction-rtl.ql-align-right {
+    padding-right: 13.5em;
+}
+.ql-editor .ql-indent-5:not(.ql-direction-rtl) {
+    padding-left: 15em;
+}
+.ql-editor li.ql-indent-5:not(.ql-direction-rtl) {
+    padding-left: 16.5em;
+}
+.ql-editor .ql-indent-5.ql-direction-rtl.ql-align-right {
+    padding-right: 15em;
+}
+.ql-editor li.ql-indent-5.ql-direction-rtl.ql-align-right {
+    padding-right: 16.5em;
+}
+.ql-editor .ql-indent-6:not(.ql-direction-rtl) {
+    padding-left: 18em;
+}
+.ql-editor li.ql-indent-6:not(.ql-direction-rtl) {
+    padding-left: 19.5em;
+}
+.ql-editor .ql-indent-6.ql-direction-rtl.ql-align-right {
+    padding-right: 18em;
+}
+.ql-editor li.ql-indent-6.ql-direction-rtl.ql-align-right {
+    padding-right: 19.5em;
+}
+.ql-editor .ql-indent-7:not(.ql-direction-rtl) {
+    padding-left: 21em;
+}
+.ql-editor li.ql-indent-7:not(.ql-direction-rtl) {
+    padding-left: 22.5em;
+}
+.ql-editor .ql-indent-7.ql-direction-rtl.ql-align-right {
+    padding-right: 21em;
+}
+.ql-editor li.ql-indent-7.ql-direction-rtl.ql-align-right {
+    padding-right: 22.5em;
+}
+.ql-editor .ql-indent-8:not(.ql-direction-rtl) {
+    padding-left: 24em;
+}
+.ql-editor li.ql-indent-8:not(.ql-direction-rtl) {
+    padding-left: 25.5em;
+}
+.ql-editor .ql-indent-8.ql-direction-rtl.ql-align-right {
+    padding-right: 24em;
+}
+.ql-editor li.ql-indent-8.ql-direction-rtl.ql-align-right {
+    padding-right: 25.5em;
+}
+.ql-editor .ql-indent-9:not(.ql-direction-rtl) {
+    padding-left: 27em;
+}
+.ql-editor li.ql-indent-9:not(.ql-direction-rtl) {
+    padding-left: 28.5em;
+}
+.ql-editor .ql-indent-9.ql-direction-rtl.ql-align-right {
+    padding-right: 27em;
+}
+.ql-editor li.ql-indent-9.ql-direction-rtl.ql-align-right {
+    padding-right: 28.5em;
+}
+.ql-editor .ql-video {
+    display: block;
+    max-width: 100%;
+}
+.ql-editor .ql-video.ql-align-center {
+    margin: 0 auto;
+}
+.ql-editor .ql-video.ql-align-right {
+    margin: 0 0 0 auto;
+}
+.ql-editor .ql-bg-black {
+    background-color: #000;
+}
+.ql-editor .ql-bg-red {
+    background-color: #e60000;
+}
+.ql-editor .ql-bg-orange {
+    background-color: #f90;
+}
+.ql-editor .ql-bg-yellow {
+    background-color: #ff0;
+}
+.ql-editor .ql-bg-green {
+    background-color: #008a00;
+}
+.ql-editor .ql-bg-blue {
+    background-color: #06c;
+}
+.ql-editor .ql-bg-purple {
+    background-color: #93f;
+}
+.ql-editor .ql-color-white {
+    color: #fff;
+}
+.ql-editor .ql-color-red {
+    color: #e60000;
+}
+.ql-editor .ql-color-orange {
+    color: #f90;
+}
+.ql-editor .ql-color-yellow {
+    color: #ff0;
+}
+.ql-editor .ql-color-green {
+    color: #008a00;
+}
+.ql-editor .ql-color-blue {
+    color: #06c;
+}
+.ql-editor .ql-color-purple {
+    color: #93f;
+}
+.ql-editor .ql-font-serif {
+    font-family: Georgia, Times New Roman, serif;
+}
+.ql-editor .ql-font-monospace {
+    font-family: Monaco, Courier New, monospace;
+}
+.ql-editor .ql-size-small {
+    font-size: 0.75em;
+}
+.ql-editor .ql-size-large {
+    font-size: 1.5em;
+}
+.ql-editor .ql-size-huge {
+    font-size: 2.5em;
+}
+.ql-editor .ql-direction-rtl {
+    direction: rtl;
+    text-align: inherit;
+}
+.ql-editor .ql-align-center {
+    text-align: center;
+}
+.ql-editor .ql-align-justify {
+    text-align: justify;
+}
+.ql-editor .ql-align-right {
+    text-align: right;
+}
+.ql-editor.ql-blank::before {
+    color: rgba(0,0,0,0.6);
+    content: attr(data-placeholder);
+    font-style: italic;
+    left: 15px;
+    pointer-events: none;
+    position: absolute;
+    right: 15px;
+}
+.ql-bubble.ql-toolbar:after,
+.ql-bubble .ql-toolbar:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.ql-bubble.ql-toolbar button,
+.ql-bubble .ql-toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 24px;
+    padding: 3px 5px;
+    width: 28px;
+}
+.ql-bubble.ql-toolbar button svg,
+.ql-bubble .ql-toolbar button svg {
+    float: left;
+    height: 100%;
+}
+.ql-bubble.ql-toolbar button:active:hover,
+.ql-bubble .ql-toolbar button:active:hover {
+    outline: none;
+}
+.ql-bubble.ql-toolbar input.ql-image[type=file],
+.ql-bubble .ql-toolbar input.ql-image[type=file] {
+    display: none;
+}
+.ql-bubble.ql-toolbar button:hover,
+.ql-bubble .ql-toolbar button:hover,
+.ql-bubble.ql-toolbar button:focus,
+.ql-bubble .ql-toolbar button:focus,
+.ql-bubble.ql-toolbar button.ql-active,
+.ql-bubble .ql-toolbar button.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-label:hover,
+.ql-bubble .ql-toolbar .ql-picker-label:hover,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-item:hover,
+.ql-bubble .ql-toolbar .ql-picker-item:hover,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected {
+    color: #fff;
+}
+.ql-bubble.ql-toolbar button:hover .ql-fill,
+.ql-bubble .ql-toolbar button:hover .ql-fill,
+.ql-bubble.ql-toolbar button:focus .ql-fill,
+.ql-bubble .ql-toolbar button:focus .ql-fill,
+.ql-bubble.ql-toolbar button.ql-active .ql-fill,
+.ql-bubble .ql-toolbar button.ql-active .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-bubble.ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+    fill: #fff;
+}
+.ql-bubble.ql-toolbar button:hover .ql-stroke,
+.ql-bubble .ql-toolbar button:hover .ql-stroke,
+.ql-bubble.ql-toolbar button:focus .ql-stroke,
+.ql-bubble .ql-toolbar button:focus .ql-stroke,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-bubble.ql-toolbar button:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar button:hover .ql-stroke-miter,
+.ql-bubble.ql-toolbar button:focus .ql-stroke-miter,
+.ql-bubble .ql-toolbar button:focus .ql-stroke-miter,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: #fff;
+}
+@media (pointer: coarse) {
+    .ql-bubble.ql-toolbar button:hover:not(.ql-active),
+    .ql-bubble .ql-toolbar button:hover:not(.ql-active) {
+        color: #ccc;
+    }
+    .ql-bubble.ql-toolbar button:hover:not(.ql-active) .ql-fill,
+    .ql-bubble .ql-toolbar button:hover:not(.ql-active) .ql-fill,
+    .ql-bubble.ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill,
+    .ql-bubble .ql-toolbar button:hover:not(.ql-active) .ql-stroke.ql-fill {
+        fill: #ccc;
+    }
+    .ql-bubble.ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+    .ql-bubble .ql-toolbar button:hover:not(.ql-active) .ql-stroke,
+    .ql-bubble.ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter,
+    .ql-bubble .ql-toolbar button:hover:not(.ql-active) .ql-stroke-miter {
+        stroke: #ccc;
+    }
+}
+.ql-bubble {
+    box-sizing: border-box;
+}
+.ql-bubble * {
+    box-sizing: border-box;
+}
+.ql-bubble .ql-hidden {
+    display: none;
+}
+.ql-bubble .ql-out-bottom,
+.ql-bubble .ql-out-top {
+    visibility: hidden;
+}
+.ql-bubble .ql-tooltip {
+    position: absolute;
+    transform: translateY(10px);
+}
+.ql-bubble .ql-tooltip a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.ql-bubble .ql-tooltip.ql-flip {
+    transform: translateY(-10px);
+}
+.ql-bubble .ql-formats {
+    display: inline-block;
+    vertical-align: middle;
+}
+.ql-bubble .ql-formats:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.ql-bubble .ql-stroke {
+    fill: none;
+    stroke: #ccc;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+.ql-bubble .ql-stroke-miter {
+    fill: none;
+    stroke: #ccc;
+    stroke-miterlimit: 10;
+    stroke-width: 2;
+}
+.ql-bubble .ql-fill,
+.ql-bubble .ql-stroke.ql-fill {
+    fill: #ccc;
+}
+.ql-bubble .ql-empty {
+    fill: none;
+}
+.ql-bubble .ql-even {
+    fill-rule: evenodd;
+}
+.ql-bubble .ql-thin,
+.ql-bubble .ql-stroke.ql-thin {
+    stroke-width: 1;
+}
+.ql-bubble .ql-transparent {
+    opacity: 0.4;
+}
+.ql-bubble .ql-direction svg:last-child {
+    display: none;
+}
+.ql-bubble .ql-direction.ql-active svg:last-child {
+    display: inline;
+}
+.ql-bubble .ql-direction.ql-active svg:first-child {
+    display: none;
+}
+.ql-bubble .ql-editor h1 {
+    font-size: 2em;
+}
+.ql-bubble .ql-editor h2 {
+    font-size: 1.5em;
+}
+.ql-bubble .ql-editor h3 {
+    font-size: 1.17em;
+}
+.ql-bubble .ql-editor h4 {
+    font-size: 1em;
+}
+.ql-bubble .ql-editor h5 {
+    font-size: 0.83em;
+}
+.ql-bubble .ql-editor h6 {
+    font-size: 0.67em;
+}
+.ql-bubble .ql-editor a {
+    text-decoration: underline;
+}
+.ql-bubble .ql-editor blockquote {
+    border-left: 4px solid #ccc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 16px;
+}
+.ql-bubble .ql-editor code,
+.ql-bubble .ql-editor pre {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+.ql-bubble .ql-editor pre {
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.ql-bubble .ql-editor code {
+    font-size: 85%;
+    padding: 2px 4px;
+}
+.ql-bubble .ql-editor pre.ql-syntax {
+    background-color: whitesmoke;
+    /*color: #f8f8f2;*/
+    overflow: visible;
+}
+.ql-bubble .ql-editor img {
+    max-width: 100%;
+}
+.ql-bubble .ql-picker {
+    color: #ccc;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    height: 24px;
+    position: relative;
+    vertical-align: middle;
+}
+.ql-bubble .ql-picker-label {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 2px;
+    position: relative;
+    width: 100%;
+}
+.ql-bubble .ql-picker-label::before {
+    display: inline-block;
+    line-height: 22px;
+}
+.ql-bubble .ql-picker-options {
+    background-color: #444;
+    display: none;
+    min-width: 100%;
+    padding: 4px 8px;
+    position: absolute;
+    white-space: nowrap;
+}
+.ql-bubble .ql-picker-options .ql-picker-item {
+    cursor: pointer;
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.ql-bubble .ql-picker.ql-expanded .ql-picker-label {
+    color: #777;
+    z-index: 2;
+}
+.ql-bubble .ql-picker.ql-expanded .ql-picker-label .ql-fill {
+    fill: #777;
+}
+.ql-bubble .ql-picker.ql-expanded .ql-picker-label .ql-stroke {
+    stroke: #777;
+}
+.ql-bubble .ql-picker.ql-expanded .ql-picker-options {
+    display: block;
+    margin-top: -1px;
+    top: 100%;
+    z-index: 1;
+}
+.ql-bubble .ql-color-picker,
+.ql-bubble .ql-icon-picker {
+    width: 28px;
+}
+.ql-bubble .ql-color-picker .ql-picker-label,
+.ql-bubble .ql-icon-picker .ql-picker-label {
+    padding: 2px 4px;
+}
+.ql-bubble .ql-color-picker .ql-picker-label svg,
+.ql-bubble .ql-icon-picker .ql-picker-label svg {
+    right: 4px;
+}
+.ql-bubble .ql-icon-picker .ql-picker-options {
+    padding: 4px 0px;
+}
+.ql-bubble .ql-icon-picker .ql-picker-item {
+    height: 24px;
+    width: 24px;
+    padding: 2px 4px;
+}
+.ql-bubble .ql-color-picker .ql-picker-options {
+    padding: 3px 5px;
+    width: 152px;
+}
+.ql-bubble .ql-color-picker .ql-picker-item {
+    border: 1px solid transparent;
+    float: left;
+    height: 16px;
+    margin: 2px;
+    padding: 0px;
+    width: 16px;
+}
+.ql-bubble .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+    position: absolute;
+    margin-top: -9px;
+    right: 0;
+    top: 50%;
+    width: 18px;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-bubble .ql-picker.ql-font .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-label[data-label]:not([data-label=''])::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-bubble .ql-picker.ql-font .ql-picker-item[data-label]:not([data-label=''])::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-label]:not([data-label=''])::before {
+    content: attr(data-label);
+}
+.ql-bubble .ql-picker.ql-header {
+    width: 98px;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item::before {
+    content: 'Normal';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="1"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+    content: 'Heading 1';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="2"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+    content: 'Heading 2';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="3"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+    content: 'Heading 3';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="4"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+    content: 'Heading 4';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="5"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+    content: 'Heading 5';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-label[data-value="6"]::before,
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+    content: 'Heading 6';
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="1"]::before {
+    font-size: 2em;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="2"]::before {
+    font-size: 1.5em;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="3"]::before {
+    font-size: 1.17em;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="4"]::before {
+    font-size: 1em;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="5"]::before {
+    font-size: 0.83em;
+}
+.ql-bubble .ql-picker.ql-header .ql-picker-item[data-value="6"]::before {
+    font-size: 0.67em;
+}
+.ql-bubble .ql-picker.ql-font {
+    width: 108px;
+}
+.ql-bubble .ql-picker.ql-font .ql-picker-label::before,
+.ql-bubble .ql-picker.ql-font .ql-picker-item::before {
+    content: 'Sans Serif';
+}
+.ql-bubble .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.ql-bubble .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+    content: 'Serif';
+}
+.ql-bubble .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.ql-bubble .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+    content: 'Monospace';
+}
+.ql-bubble .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+    font-family: Georgia, Times New Roman, serif;
+}
+.ql-bubble .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+    font-family: Monaco, Courier New, monospace;
+}
+.ql-bubble .ql-picker.ql-size {
+    width: 98px;
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-label::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-item::before {
+    content: 'Normal';
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-label[data-value=small]::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+    content: 'Small';
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-label[data-value=large]::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+    content: 'Large';
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-label[data-value=huge]::before,
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+    content: 'Huge';
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=small]::before {
+    font-size: 10px;
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=large]::before {
+    font-size: 18px;
+}
+.ql-bubble .ql-picker.ql-size .ql-picker-item[data-value=huge]::before {
+    font-size: 32px;
+}
+.ql-bubble .ql-color-picker.ql-background .ql-picker-item {
+    background-color: #fff;
+}
+.ql-bubble .ql-color-picker.ql-color .ql-picker-item {
+    background-color: #000;
+}
+.ql-bubble .ql-toolbar .ql-formats {
+    margin: 8px 12px 8px 0px;
+}
+.ql-bubble .ql-toolbar .ql-formats:first-child {
+    margin-left: 12px;
+}
+.ql-bubble .ql-color-picker svg {
+    margin: 1px;
+}
+.ql-bubble .ql-color-picker .ql-picker-item.ql-selected,
+.ql-bubble .ql-color-picker .ql-picker-item:hover {
+    border-color: #fff;
+}
+.ql-bubble .ql-tooltip {
+    background-color: #444;
+    border-radius: 25px;
+    color: #fff;
+}
+.ql-bubble .ql-tooltip-arrow {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: " ";
+    display: block;
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+}
+.ql-bubble .ql-tooltip:not(.ql-flip) .ql-tooltip-arrow {
+    border-bottom: 6px solid #444;
+    top: -6px;
+}
+.ql-bubble .ql-tooltip.ql-flip .ql-tooltip-arrow {
+    border-top: 6px solid #444;
+    bottom: -6px;
+}
+.ql-bubble .ql-tooltip.ql-editing .ql-tooltip-editor {
+    display: block;
+}
+.ql-bubble .ql-tooltip.ql-editing .ql-formats {
+    visibility: hidden;
+}
+.ql-bubble .ql-tooltip-editor {
+    display: none;
+}
+.ql-bubble .ql-tooltip-editor input[type=text] {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    height: 100%;
+    outline: none;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+}
+.ql-bubble .ql-tooltip-editor a {
+    top: 10px;
+    position: absolute;
+    right: 20px;
+}
+.ql-bubble .ql-tooltip-editor a:before {
+    color: #ccc;
+    content: "\D7";
+    font-size: 16px;
+    font-weight: bold;
+}
+.ql-container.ql-bubble:not(.ql-disabled) a {
+    position: relative;
+    white-space: nowrap;
+}
+.ql-container.ql-bubble:not(.ql-disabled) a::before {
+    background-color: #444;
+    border-radius: 15px;
+    top: -5px;
+    font-size: 12px;
+    color: #fff;
+    content: attr(href);
+    font-weight: normal;
+    overflow: hidden;
+    padding: 5px 15px;
+    text-decoration: none;
+    z-index: 1;
+}
+.ql-container.ql-bubble:not(.ql-disabled) a::after {
+    border-top: 6px solid #444;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    top: 0;
+    content: " ";
+    height: 0;
+    width: 0;
+}
+.ql-container.ql-bubble:not(.ql-disabled) a::before,
+.ql-container.ql-bubble:not(.ql-disabled) a::after {
+    left: 0;
+    margin-left: 50%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    transition: visibility 0s ease 200ms;
+    visibility: hidden;
+}
+.ql-container.ql-bubble:not(.ql-disabled) a:hover::before,
+.ql-container.ql-bubble:not(.ql-disabled) a:hover::after {
+    visibility: visible;
+}
+.hljs{display:block;overflow-x:auto;padding:0.5em;background:white;color:black}.hljs-comment,.hljs-quote,.hljs-variable{color:#008000}.hljs-keyword,.hljs-selector-tag,.hljs-built_in,.hljs-name,.hljs-tag{color:#00f}.hljs-string,.hljs-title,.hljs-section,.hljs-attribute,.hljs-literal,.hljs-template-tag,.hljs-template-variable,.hljs-type,.hljs-addition{color:#a31515}.hljs-deletion,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-meta{color:#2b91af}.hljs-doctag{color:#808080}.hljs-attr{color:#f00}.hljs-symbol,.hljs-bullet,.hljs-link{color:#00b0e8}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:bold}* {
+        vector-effect:non-scaling-stroke
+    }/* ]]> */</style></svg>

@@ -6,55 +6,55 @@ import Main.Manager;
 
 public class FileHelper {
 
-    public static void read(String filepath){
-        File file = new File(filepath);
-        try ( FileInputStream fis = new FileInputStream(file);){
-            int size;
-            byte[] b = new byte[1024];
-            if((size = fis.read(b))!=-1)
-                System.out.println(new String(b));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+	public static void read(String filepath) {
+		File file = new File(filepath);
+		try (FileInputStream fis = new FileInputStream(file);) {
+			int size = 0;
+			byte[] b = new byte[1024];
+			if ((size = fis.read(b)) != -1)
+				System.out.println(new String(b));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-    public static void write(String des,long offset){
-        File src_file = new File(Manager.file_path);
-        File des_file = new File(des);
-        int size;
-        byte[] b = new byte[Manager.BLOCK_SIZE];
-        try ( FileInputStream fis = new FileInputStream(src_file);
-              FileOutputStream fos = new FileOutputStream(des_file);){
+	public static void write(String des, long offset) {
+		File src_file = new File(Manager.file_path);
+		File des_file = new File(des);
+		int size;
+		byte[] b = new byte[Manager.BLOCK_SIZE];
+		try (FileInputStream fis = new FileInputStream(src_file);
+				FileOutputStream fos = new FileOutputStream(des_file);) {
 
-            fis.skip(offset);
-            if((size=fis.read(b))!=-1)
-                fos.write(b,0,size);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    public static void recover(String srcPath, String desPath, String fileName) {
-    	File src_file = new File(srcPath + fileName);
-        File des_file = new File(desPath+fileName);
-        int size;
-        
-        byte[] b = new byte[Manager.BLOCK_SIZE];
-        try ( FileInputStream fis = new FileInputStream(src_file);
-              FileOutputStream fos = new FileOutputStream(des_file);){
+			fis.skip(offset);
+			if ((size = fis.read(b)) != -1)
+				fos.write(b, 0, size);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-            if((size=fis.read(b))!=-1)
-                fos.write(b,0,size);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    	
-    }
+	public static void recover(String srcPath, String desPath, String fileName) {
+		File src_file = new File(srcPath + fileName);
+		File des_file = new File(desPath + fileName);
+		int size;
+
+		byte[] b = new byte[Manager.BLOCK_SIZE];
+		try (FileInputStream fis = new FileInputStream(src_file);
+				FileOutputStream fos = new FileOutputStream(des_file);) {
+
+			if ((size = fis.read(b)) != -1)
+				fos.write(b, 0, size);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
 
 }

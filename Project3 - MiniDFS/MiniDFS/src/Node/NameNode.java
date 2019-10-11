@@ -2,7 +2,6 @@ package Node;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 import java.util.Vector;
@@ -153,6 +152,7 @@ public class NameNode extends Thread implements Serializable {
 
 	}
 
+<<<<<<< HEAD
 	public int getFirstAvailableBlock(String read_first_blk) throws Exception{
     	int i = 0;
         int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
@@ -182,16 +182,44 @@ public class NameNode extends Thread implements Serializable {
         try
     	{
     		serverId = fileMap.block_datanode.get(read_first_blk).get(getFirstAvailableBlock(read_first_blk));
+=======
+	public int getFirstAvailableBlock(String read_first_blk) throws Exception {
+		int i = 0;
+		int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
+//        System.out.println(serverId);
+		String path = "dfs/datanode" + serverId + "/";
+		String filename = read_first_blk;
+		File tmp_file = new File(path + filename);
+		while (!tmp_file.exists()) {
+			i++;
+			if (i == 3) {
+				throw new Exception("No available block! Please try to recovery this file.");
+			}
+			serverId = fileMap.block_datanode.get(read_first_blk).get(i);
+//            System.out.println(serverId);
+			path = "dfs/datanode" + serverId + "/";
+			tmp_file = new File(path + filename);
+		}
+		return i;
+	}
+
+	public void readFile() {
+		MyFile myFile = fileMap.id_file.get(Manager.file_ID);
+		String read_first_blk = myFile.getBlocks()[0];
+		int serverId = 0;
+		try {
+			serverId = fileMap.block_datanode.get(read_first_blk).get(getFirstAvailableBlock(read_first_blk));
+>>>>>>> 815a8d4d8ce81d8143af79ca819b4408e62c788b
 //    		Global.data_event[serverId].await();
-    		Manager.data_event[serverId].await();
-    	} catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (BrokenBarrierException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
+			Manager.data_event[serverId].await();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (BrokenBarrierException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 //    		e.printStackTrace();
-        	System.out.println("Error! Cannot read this file.");
-    		try {
+			System.out.println("Error! Cannot read this file.");
+			try {
 				Manager.read_event.await();
 			} catch (InterruptedException e1) {
 				// TODO Auto-generated catch block
@@ -200,7 +228,7 @@ public class NameNode extends Thread implements Serializable {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
-    	} 
+		}
 //        try {
 //        	Manager.read_event.await();
 //        } catch (InterruptedException e) {
@@ -208,42 +236,43 @@ public class NameNode extends Thread implements Serializable {
 //        } catch (BrokenBarrierException e) {
 //            e.printStackTrace();
 //        }
-    }
+	}
 
-    public void fetchFile(){
-        MyFile myFile = fileMap.id_file.get(Manager.file_ID);
-        File output = new File(Manager.save_path+"/"+myFile.getName());
-        int serverId;
-        byte[] b = new byte[Manager.BLOCK_SIZE];
-        int size;
-        try (FileOutputStream fos = new FileOutputStream(output);){
-            for(String blk : myFile.getBlocks()){
+	public void fetchFile() {
+		MyFile myFile = fileMap.id_file.get(Manager.file_ID);
+		File output = new File(Manager.save_path + "/" + myFile.getName());
+		int serverId;
+		byte[] b = new byte[Manager.BLOCK_SIZE];
+		int size;
+		try (FileOutputStream fos = new FileOutputStream(output);) {
+			for (String blk : myFile.getBlocks()) {
 //            	try
 //            	{
-            	serverId = fileMap.block_datanode.get(blk).get(getFirstAvailableBlock(blk));
+				serverId = fileMap.block_datanode.get(blk).get(getFirstAvailableBlock(blk));
 //            	} catch (Exception e) {
 //            		e.printStackTrace();
 //            	}
-                FileInputStream fis = new FileInputStream(new File("dfs/datanode"+serverId+"/"+blk));
-                if((size = fis.read(b))!=-1)
-                    fos.write(b,0,size);
-                fis.close();
-            }
-            System.out.println("Fetch success!");
-            
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (BrokenBarrierException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
+				FileInputStream fis = new FileInputStream(new File("dfs/datanode" + serverId + "/" + blk));
+				if ((size = fis.read(b)) != -1)
+					fos.write(b, 0, size);
+				fis.close();
+			}
+			System.out.println("Fetch success!");
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			// System.out.println("Error! File cannot be found.");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (BrokenBarrierException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
 //    		e.printStackTrace();
-        	System.out.println("Error! Cannot fetch this file.");
-    	} finally {
-    		try {
+			System.out.println("Error! Cannot fetch this file.");
+		} finally {
+			try {
 				Manager.main_event[0].await();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -252,9 +281,9 @@ public class NameNode extends Thread implements Serializable {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-    	}
-        
-    }
+		}
+
+	}
 
 	private boolean hasFile(String fileName) {
 		File f = new File(fileName);
@@ -267,7 +296,7 @@ public class NameNode extends Thread implements Serializable {
 	public void recoverFile() {
 		MyFile myFile = fileMap.id_file.get(Manager.file_ID);
 		String[] blockNames = myFile.getBlocks();
-		
+
 		boolean canRecover = true;
 
 		for (int i = 0; i < blockNames.length; ++i) {
