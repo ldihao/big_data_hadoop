@@ -151,38 +151,7 @@ public class NameNode extends Thread implements Serializable {
 		updateData();
 
 	}
-
-<<<<<<< HEAD
-	public int getFirstAvailableBlock(String read_first_blk) throws Exception{
-    	int i = 0;
-        int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
-//        System.out.println(read_first_blk);
-        String path = "dfs/datanode"+serverId+"/";
-        String filename = read_first_blk;
-//        System.out.println(filename);
-        File tmp_file = new File(path+filename);
-        while(!tmp_file.exists()) {
-        	i++;
-        	if(i==3) {
-	        	throw new Exception("No available block! Please try to recovery this file.");
-	        }
-        	serverId = fileMap.block_datanode.get(read_first_blk).get(i);
-//            System.out.println(serverId);
-	        path = "dfs/datanode"+serverId+"/";
-//	        filename = Manager.file_ID+"-part-0";
-	        tmp_file = new File(path+filename);
-        }
-        return i;
-    }
-
-    public void readFile(){
-        MyFile myFile = fileMap.id_file.get(Manager.file_ID);
-        String read_first_blk = myFile.getBlocks()[0];
-        int serverId=0;
-        try
-    	{
-    		serverId = fileMap.block_datanode.get(read_first_blk).get(getFirstAvailableBlock(read_first_blk));
-=======
+	
 	public int getFirstAvailableBlock(String read_first_blk) throws Exception {
 		int i = 0;
 		int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
@@ -197,7 +166,6 @@ public class NameNode extends Thread implements Serializable {
 			}
 			serverId = fileMap.block_datanode.get(read_first_blk).get(i);
 //            System.out.println(serverId);
-			path = "dfs/datanode" + serverId + "/";
 			tmp_file = new File(path + filename);
 		}
 		return i;
@@ -209,7 +177,6 @@ public class NameNode extends Thread implements Serializable {
 		int serverId = 0;
 		try {
 			serverId = fileMap.block_datanode.get(read_first_blk).get(getFirstAvailableBlock(read_first_blk));
->>>>>>> 815a8d4d8ce81d8143af79ca819b4408e62c788b
 //    		Global.data_event[serverId].await();
 			Manager.data_event[serverId].await();
 		} catch (InterruptedException e) {
