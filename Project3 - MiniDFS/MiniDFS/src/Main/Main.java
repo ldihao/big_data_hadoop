@@ -63,7 +63,7 @@ public class Main {
 					Manager.ls_event.await();
 				else if (Manager.cmd_type == Operation.fetch) {
 					Manager.main_event[0].await();
-					System.out.println("Fetch success!");
+//					System.out.println("Fetch success!");
 				} else if (Manager.cmd_type == Operation.recover) {
 					for (int i = 0; i < Manager.SERVER_NUMBER; i++)
 						Manager.main_event[i].await();
