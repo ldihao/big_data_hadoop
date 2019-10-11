@@ -157,7 +157,7 @@ public class NameNode extends Thread implements Serializable {
 		int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
 //        System.out.println(serverId);
 		String path = "dfs/datanode" + serverId + "/";
-		String filename = Manager.file_ID + "-part-0";
+		String filename = read_first_blk;
 		File tmp_file = new File(path + filename);
 		while (!tmp_file.exists()) {
 			i++;
@@ -167,7 +167,6 @@ public class NameNode extends Thread implements Serializable {
 			serverId = fileMap.block_datanode.get(read_first_blk).get(i);
 //            System.out.println(serverId);
 			path = "dfs/datanode" + serverId + "/";
-			filename = Manager.file_ID + "-part-0";
 			tmp_file = new File(path + filename);
 		}
 		return i;
@@ -230,6 +229,7 @@ public class NameNode extends Thread implements Serializable {
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
+			// System.out.println("Error! File cannot be found.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
