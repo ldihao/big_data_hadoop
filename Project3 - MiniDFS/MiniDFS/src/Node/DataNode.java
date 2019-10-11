@@ -88,10 +88,10 @@ public class DataNode extends Thread {
 	}
 
 	public void recover() {
-		for(String blockName : Manager.recover_datanode.keySet()) {		
+		for (String blockName : Manager.recover_datanode.keySet()) {
 			String srcPath = "dfs/datanode" + Manager.recover_datanode.get(blockName) + "/";
-			for(int serverId:Manager.needRecover) {
-				String desPath = "dfs/datanode" + serverId +   "/";
+			for (int serverId : Manager.needRecover) {
+				String desPath = "dfs/datanode" + serverId + "/";
 				FileHelper.recover(srcPath, desPath, blockName);
 			}
 		}

@@ -1,5 +1,5 @@
 package Tools;
 
 public enum Operation {
-    ls,put,fetch,read,quit,recover
+	ls, put, fetch, read, quit, recover
 }
