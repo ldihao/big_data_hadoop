@@ -45,7 +45,7 @@ public class Main {
 		// shell
 		Scanner scan = new Scanner(System.in);
 		while (true) {
-			System.out.print("MiniDFS > ");
+			System.out.print("miniDFS: /$ ");
 			Manager.cmd_flag = processCmd(scan.nextLine());
 			if (Manager.cmd_flag) {
 				Manager.name_event.await();

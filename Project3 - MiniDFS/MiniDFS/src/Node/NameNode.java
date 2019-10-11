@@ -156,9 +156,10 @@ public class NameNode extends Thread implements Serializable {
 	public int getFirstAvailableBlock(String read_first_blk) throws Exception{
     	int i = 0;
         int serverId = fileMap.block_datanode.get(read_first_blk).get(i);
-//        System.out.println(serverId);
+//        System.out.println(read_first_blk);
         String path = "dfs/datanode"+serverId+"/";
-        String filename = Manager.file_ID+"-part-0";
+        String filename = read_first_blk;
+//        System.out.println(filename);
         File tmp_file = new File(path+filename);
         while(!tmp_file.exists()) {
         	i++;
@@ -168,7 +169,7 @@ public class NameNode extends Thread implements Serializable {
         	serverId = fileMap.block_datanode.get(read_first_blk).get(i);
 //            System.out.println(serverId);
 	        path = "dfs/datanode"+serverId+"/";
-	        filename = Manager.file_ID+"-part-0";
+//	        filename = Manager.file_ID+"-part-0";
 	        tmp_file = new File(path+filename);
         }
         return i;
