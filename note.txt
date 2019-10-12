@@ -1,0 +1,39 @@
+## To launch a hadoop cluster:
+
+$ hadoop namenode -format
+$ start-all.sh
+
+
+## To check all nodes' status
+
+$ hdfs dfsadmin -report
+
+
+## Change replication factor
+
+$ hadoop fs –setrep –w 3 /my/file
+$/usr/local/hadoop/etc/hdfs-site.xml
+
+
+## To configure erasure code
+
+$  hdfs ec [Options]
+
+## To put a file
+
+$ hadoop fs -put my_file /my_directory
+
+
+## To check the storage status of a file or a directory
+
+$ hdfs fsck /input -files -blocks -locations -racks
+
+
+## Physical location of a file in a datanode:
+
+/home/hadoop3/hadoop/tmp/dfs/data/current/BP-599286197-172.18.0.2-1570795796382/current/finalized/subdir0/subdir0
+
+
+## Recover a file or a directory
+
+$ hdfs fsck /input/a.dat
