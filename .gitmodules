@@ -1,0 +1,3 @@
+[submodule "Project1 - EC in Hadoop/hadoop-erasurecode"]
+	path = Project1 - EC in Hadoop/hadoop-erasurecode
+	url = https://github.com/MinesNicaicai/hadoop-erasurecode
