@@ -148,24 +148,24 @@ Users can access Mini-DFS by directly running Main.java.
 \section{Architecture}
 
 \begin{figure}[H]
-\centerline{\includegraphics[width = 1\textwidth]{screenshot//process.png}}
+\centerline{\includegraphics[width = 1.5\textwidth]{screenshot//process.png}}
 \caption{Architecture}
 \label{fig_process}
 \end{figure}
 
-As we can see from the image, when a client type some command to the interface \textit{Main}, 
+As we can see from the image, when a client type some command to the interface \textit{Main},
 \textit{Main} share this command with \textit{NameNode} and \textit{DataNode} through \textit{Manager}.
- At the same time, we use \textit{java.util.concurrent.CyclicBarrier} \textit{name\_event}, 
- \textit{main\_event}, \textit{data\_event} to send signal from \textit{Main} to \textit{NameNode} and 
- \textit{DataNode}. So, then \textit{Main} uses name\_event.await() to notify \textit{NameNode} to do command, 
- \textit{NameNode} uses data\_event.await() to notify \textit{DataNode} to do command, finally \textit{DataNode} 
+ At the same time, we use \textit{java.util.concurrent.CyclicBarrier} \textit{name\_event},
+ \textit{main\_event}, \textit{data\_event} to send signal from \textit{Main} to \textit{NameNode} and
+ \textit{DataNode}. So, then \textit{Main} uses name\_event.await() to notify \textit{NameNode} to do command,
+ \textit{NameNode} uses data\_event.await() to notify \textit{DataNode} to do command, finally \textit{DataNode}
  uses main\_event.await() to notify \textit{Main} that all process has been done and it can receive next command from client.
 
 \section{Example}
 
-As you may discover during the experiment, our Mini-DFS accepts only several commands. When the command line does not understand 
-the command, it gives the list of the accepted commands. In addition, each command has its own format of the input. The input number of 
-arguments might be different, so when the format is not correct, it also gives the warning message to help the client enter the correct commands.\\ 
+As you may discover during the experiment, our Mini-DFS accepts only several commands. When the command line does not understand
+the command, it gives the list of the accepted commands. In addition, each command has its own format of the input. The input number of
+arguments might be different, so when the format is not correct, it also gives the warning message to help the client enter the correct commands.\\
 Now first, we upload a file to Mini-DFS using \textit{put}.
 
 \begin{figure}[H]
@@ -191,7 +191,7 @@ Then, we can try to read the first block of this file. Since it's of format pdf,
 \end{figure}
 
 Next, we download this file to local file system: directory \textit{./dfs} .
-This could be any directory on the client side. We choose \textit{./dfs} just because 
+This could be any directory on the client side. We choose \textit{./dfs} just because
 it is easier to demonstrate the changes on the disk.
 
 \begin{figure}[H]
@@ -200,7 +200,7 @@ it is easier to demonstrate the changes on the disk.
 % \label{fig_process}
 \end{figure}
 
-Well, it appears in the file system. The file is succefully downloaded from the Mini-DFS. 
+Well, it appears in the file system. The file is succefully downloaded from the Mini-DFS.
 As you could probably see from the picture, this is an e-book about body training.
 
 \begin{figure}[H]
@@ -209,7 +209,7 @@ As you could probably see from the picture, this is an e-book about body trainin
 % \label{fig_process}
 \end{figure}
 
-Then, we delete \textit{datanode0} and try to recover it. Remember, there should be at least 
+Then, we delete \textit{datanode0} and try to recover it. Remember, there should be at least
 one replica of the \textit{datanode0} in Mini-DFS.
 
 \begin{figure}[H]
@@ -218,9 +218,9 @@ one replica of the \textit{datanode0} in Mini-DFS.
 % \label{fig_process}
 \end{figure}
 
-Using \textit{recover 0}. The command will check the completency of the file 0. 
-Since Mini-DFS has the list of the server which should store the distributed data nodes, 
-it could safely check whether the corresponding data nodes still exist. If this is 
+Using \textit{recover 0}. The command will check the completency of the file 0.
+Since Mini-DFS has the list of the server which should store the distributed data nodes,
+it could safely check whether the corresponding data nodes still exist. If this is
 not the case, it trys to find one replica to recover it.
 
 \begin{figure}[H]
