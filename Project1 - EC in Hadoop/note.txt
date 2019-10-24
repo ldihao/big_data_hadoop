@@ -37,3 +37,15 @@ $ hdfs fsck /input -files -blocks -locations -racks
 ## Recover a file or a directory
 
 $ hdfs fsck /input/a.dat
+
+
+echo "abc" >> a.dat
+for i in {1..1000}; do cat a.dat >> b.dat; done;
+for i in {1..1000}; do cat b.dat >> a.dat; done;
+for i in {1..1000}; do cat a.dat >> b.dat; done;
+
+hadoop fs -mkdir /input
+hdfs ec -enablePolicy -policy LRC-6-4-1024k
+hdfs ec -setPolicy -path /input -policy LRC-6-4-1024k
+hadoop fs -put b.dat /input
+
