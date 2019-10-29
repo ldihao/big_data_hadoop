@@ -278,3 +278,10 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+Project1 - EC in Hadoop/report.txt
+Project1 - EC in Hadoop/create-and-add-file.sh
+Project1 - EC in Hadoop/easy-start.sh
+Project1 - EC in Hadoop/error_info.txt
+Project1 - EC in Hadoop/start-container.sh
+Project1 - EC in Hadoop/stop-container.sh
+Project1 - EC in Hadoop/update-hadoop.sh

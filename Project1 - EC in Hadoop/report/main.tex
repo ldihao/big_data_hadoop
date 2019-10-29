@@ -293,6 +293,26 @@ one local part $X$:
   \caption{error: too many missing blocks in a local part}
 \end{figure}
 
+Although LRC code features its less inputs for reconstruction of one missing data 
+unit, its advantage is not present in our test. A test on latency shows that both LRC and
+RS code need almost the same time for recovering then reading a corrupted file, which 
+might be explained by the long time for reading over recovering. Besides, 
+according to \cite{lrcPaper}, less
+input units can efficiently reduce the reconstruction bandwidth, while the gain
+on decoding time is orders of magnitude smaller than transfer time. However, the use
+of docker container to deploy 10 datanodes and 1 namenode on the same PC allows all 
+units to transfer data by PC bus at a high rate, thus largely reduces the transfer 
+latency. Therefore, the gain in transfer latency of LRC code cannot be observed
+in the total reconstruction process. 
+
+
+\begin{thebibliography}{5}
+
+  \bibitem{lrcPaper} 
+  Cheng Huang et al., \emph{Erasure Code in Windows Azure Storage},
+  Microsoft Corporation
+\end{thebibliography}
+
 % \begin{figure}
 %   \includegraphics[width=\linewidth]{test-1.png}
 %   \caption{A boat.}
