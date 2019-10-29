@@ -106,7 +106,7 @@ Xin  \textsc{XIE}
 
 \end{titlepage}
 \indent
-\section{Introduction:}
+\section{Introduction}
 Erasure code is a method of data protection in which data is broken into fragments, expanded and encoded with redundant data pieces and stored across a set of different locations or storage media.
 
 In hadoop system, an erasure code called RS code has already been implemented. For every \textbf{\textit{n}} data units, RS code will have \textbf{\textit{k}} parity units, which \textbf{\textit{k}} is set by user, and generate a matrix which size is $(\textbf{\textit{n}}+\textbf{\textit{k}})\times \textbf{\textit{n}}$, then store the data that has been transformed by this matrix. Although it will cost more disk space, when any data unit becomes unavailable, we could pick \textbf{\textit{n}} available units for reconstruction. We can pick these \textbf{\textit{n}} row in the matrix and calculate its inverse matrix, then multiply the vector to get the origin \textbf{\textit{n}} data unit.
@@ -124,7 +124,7 @@ In the two local parity units, each is related to 3 data units, so that if any d
 %\label{fig_process}
 \end{figure}
 
-\section{Code:}
+\section{Code}
 The implementation of LRC code is based on JAVA and composed with following files:
 \begin{itemize}
 \item LRCUtil.java: In this file we define the function to generate the encode matrix and the function to encode data. The encode matrix is composed by an $6\times 6$ identity matrix. Two local parity vectors, one with the first three elements are one and others are zero, another with the last three elements are one and others are zero. Two global parity vectors. All under GF($2^8$). The encode matrix shows as below:
@@ -197,6 +197,111 @@ Using the above logic we get the decode matrix either $3 \times 3$ or $6\times 6
 
 
 \section{Example}
+The feasiblity of this LRC code is tested in the hadoop file system in the following steps:
+\begin{itemize}
+\item Compile the whole hadoop project, package it into a native distribution and deploy the hadoop system using docker container.
+\item Create an empty directory in hadoop file system. Set the erasure code policy to LRC-6-4-1024k.
+\item Put an 800 MB file in the directory. The file will be encoded by LRC code into 6 data chunks and 4 parity chunks.
+\item Find the physical locations of file chunks. Choose several chunks and manually delete them. 
+\item Fetch the file from the hadoop file system. 
+\item Verify the identity of the fetched file.
+\end{itemize}
+
+
+First we compile the whole hadoop project and deploy the hadoop system using docker container.
+Here our LRC code configuration is composed with 6 data units and 4 parity units, thus we need to deploy 10 datanodes.\\
+
+Type "hadoop namenode -format" and "\$HADOOP\_HOME/sbin/start-all.sh" to launch hadoop file system
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-0.png}
+  \caption{start namenode and datanodes}
+\end{figure}
+
+Type "hdfs ec -listPolicies" to check if LRC policy is registered in hadoop.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-1.png}
+  \caption{list erasure code policies}
+\end{figure}
+
+Create an empty directory in hadoop file system. Enable the LRC policy and set the erasure code policy to \textbf{\textit{LRC-6-4-1024k}}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-2.png}
+  \caption{set LRC policy}
+\end{figure}
+
+Type "hadoop fs -put b.dat /input " to put an 800 MB file b.dat in the directory /input.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-3.png}
+  \caption{put the file b.dat in /input}
+\end{figure}
+
+Use "hdfs fsck /input -files -blocks -locations -racks" to find the physical locations of the file in all nodes.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-4.png}
+  \caption{find physical locations}
+\end{figure}
+
+From the above figure the 10 chunks are stored in 172.18.0.11, 172.18.0.6, ..., 172.18.0.4 in order, which 
+respectively correspond to 
+$x_{0}$, $x_{1}$, $x_{2}$, $y_{0}$, $y_{1}$, $y_{2}$, $p_{x}$, $p_{y}$, $p_{0}$, $p_{1}$.
+We delete the data unit $x_{0}$.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-5.png}
+  \caption{physically delete $x_{0}$}
+\end{figure}
+
+Use "hadoop fs -cat /input/b.dat $>$ c.dat" command to fetch the file from hadoop file system.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-6.png}
+  \includegraphics[width=\linewidth]{test-7.png}
+  \caption{fetch b.dat from hadoop and copy it to c.dat}
+\end{figure}
+
+We can see from the above figure that a block of the target file b.dat is first missing, but then is  
+reconstructed from other blocks. The command outputs correct content to c.dat. \\
+
+Finally use "cmp" command to verify the identity of c.dat
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-8.png}
+  \caption{verify the identity of c.dat}
+\end{figure}
+
+We test different missing blocks configurations with successful reconstructions:
+\begin{itemize}
+\item $x_0$ unit is missing
+\item $x_0$ and $y_0$ units are missing
+\item $x_0$, $y_0$ and $y_1$ units are missing
+\item $x_0$, $y_1$, $p_x$ and $p_0$ units are missing
+\end{itemize}
+and also an expected failure configuration in which all missing blocks belong to
+one local part $X$:
+\begin{itemize}
+  \item $x_0$, $x_1$, $x_2$ and $p_x$ units are missing
+\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{test-9.png}
+  \caption{error: too many missing blocks in a local part}
+\end{figure}
+
+% \begin{figure}
+%   \includegraphics[width=\linewidth]{test-1.png}
+%   \caption{A boat.}
+%   \label{fig:test-1}
+% \end{figure}
+
+
+
+
 
 
 
